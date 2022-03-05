@@ -1,0 +1,118 @@
+.error {
+	background-color: red;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+	color: black;
+}
+
+header, footer, nav, main {
+	border: black solid 1px;
+}
+
+header ul {
+	list-style-type: none;
+}
+
+header li {
+	display: inline-block
+}
+
+nav {
+  float: left;
+	border-left:0;
+	border-bottom: solid 0px;
+	margin-top: -1px;
+}
+
+nav li {
+	list-style-type: square;
+}
+
+nav ul    {
+	margin: 2px;
+	padding: 2px;
+	list-style-type: square;
+}
+
+nav a+a:before {
+	content: ' / ';
+}
+
+aside {
+	float: left;
+	margin-right: 25px;
+	background-color: #aaa;
+}
+
+main {
+	margin-top: -1px;
+	padding: 10px;
+	border-bottom: 0;
+	border-right: 0;
+	min-height:180px;
+	background-color: #ADD8E6;
+}
+
+table, tr, th, td{
+	border: 1px solid black;
+}
+
+thead {
+	background-color: #DCDCDC;
+}
+
+th a, th a:hover, th a:focus, th a:active {
+	text-decoration: none;
+	color: black;
+}
+
+th a {
+  display: block;
+}
+
+td th{
+	height: 50px;
+}
+
+nav ul li {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li a {
+	margin:0;
+	padding:0 10px;
+	display:block;
+}
+
+a {
+	text-decoration: none;
+  color: green;
+}
+
+nav ul li a:hover {
+	background-color: #555;
+	color: white;
+}
+
+label{
+	display:inline-block;
+	width:150px;
+}
+
+.tri_actif, .tri_actif:hover, .tri_actif:focus, .tri_actif:active{
+	color: red;
+	pointer-events: none;
+}
+
+.triangle-asc::after {
+ 	content: "▲";
+ 	color: black;
+}
+
+.triangle-desc::after{
+	content: "▼";
+  color: black;
+}
